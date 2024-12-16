@@ -20,17 +20,17 @@ CNN architecture with convolutional, pooling, and fully connected layers.
 
 Training, evaluation, and prediction functionalities.
 
-Getting Started
+##Getting Started
 
 Prerequisites
 
 Ensure you have Python and TensorFlow installed. Use the following command to install TensorFlow:
 
-pip install tensorflow
+	pip install tensorflow
 
-Directory Structure
+	Directory Structure
 
-The project assumes the following directory structure:
+##The project assumes the following directory structure:
 
 dataset/
     training_set/
@@ -43,11 +43,12 @@ single_prediction/
     image1.jpg
     image2.jpg
 
-Steps to Run the Project
+##Steps to Run the Project
 
 1. Data Preprocessing
 
-Data preprocessing includes normalization and augmentation for the training set. Here's how it’s done:
+Data preprocessing includes normalization and augmentation for the training set. 
+Here's how it’s done:
 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -98,7 +99,7 @@ cnn.fit(x=training_set, validation_data=test_set, epochs=25)
 
 4. Saving the Model
 
-cnn.save("cat_dog_classifier.h5")
+cnn.save("cat_dog_classifier.keras")
 
 5. Predicting New Images
 
@@ -124,18 +125,10 @@ Training Accuracy: Approximately 95% after 25 epochs.
 
 Test Accuracy: Approximately 92%.
 
-Future Enhancements
+##Future Enhancements
 
 Add more training data for better generalization.
 
 Implement a web interface to upload and classify images.
 
 Use transfer learning with pre-trained models for improved accuracy.
-
-License
-
-This project is licensed under the MIT License. Feel free to use and modify the code.
-
-Contributions
-
-Contributions are welcome! Feel free to submit issues and pull requests.

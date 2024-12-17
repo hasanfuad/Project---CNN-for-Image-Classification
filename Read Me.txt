@@ -125,7 +125,7 @@ Training Accuracy: Approximately 95% after 25 epochs.
 
 Test Accuracy: Approximately 92%.
 
-##Future Enhancements
+##For more optimization:
 
 Add more training data for better generalization.
 
